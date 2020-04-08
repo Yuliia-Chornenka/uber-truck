@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Shipping</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header class="header header__home">
+    <div class="header__wrapper header__wrapper-home">
+        <h1 class="company-name">easy shipping</h1>
+        <a href="../profile/profile.html" class="header-link">Profile</a>
+        <button class="btn btn__login" type="submit">Login</button>
+    </div>
+</header>
+
+<div class="intro">
+    <div class="block__wrapper intro__wrapper">
+
+        <div class="register-block">
+            <p class="register-title">Want to be a driver?</p>
+            <button class="btn btn__register--driver" type="submit">Register</button>
+        </div>
+
+        <h1 class="company-name__intro">easy shipping</h1>
+
+        <div class="register-block">
+            <p class="register-title">Want to be a shipper?</p>
+            <button class="btn btn__register--shipper" type="submit">Register</button>
+        </div>
+
+        <div class="header-img"></div>
+
+    </div>
+</div>
+
+<div class="services">
+    <div class="block__wrapper services__wrapper">
+
+        <div class="service-item">
+            <h2 class="services-item__title">Information for drivers</h2>
+            <p class="services-item__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+                consectetur distinctio earum, id nulla omnis temporibus velit veniam! Dolorum iure perspiciatis quaerat?
+                Culpa, deserunt distinctio esse harum id laudantium libero, nam perferendis sit ullam vero?</p>
+        </div>
+
+        <div class="service-item">
+            <h2 class="services-item__title">Information for shippers</h2>
+            <p class="services-item__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+                corporis cum dicta dolore dolorem doloremque eaque earum eos eveniet ex expedita id illo laudantium modi
+                necessitatibus nesciunt pariatur quasi ratione sed, soluta tempore vel vero?</p>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer footer__home">
+    <p class="footer__wrapper">
+        &copy;2020 Easy Shipping, Inc. All Rights Reserved.
+    </p>
+</footer>
+
+
+<!--   Modals   -->
+
+<!--Register driver-->
+<dialog id="modal-register-driver" class="modal">
+    <div>
+        <h2 class="modal-title">Register</h2>
+        <span class="close-btn" id="close-register-driver">✖</span>
+    </div>
+    <form id="register-form-driver">
+        <p id="error-register-driver-validation" class="form-error-message" >Please enter correct data that meets the following rules: at least 3 characters name, at least 6 characters password and real mail address.</p>
+
+        <input id="name-register-driver" class="input" placeholder="Enter your name*" type="text" name="userName" required="">
+        <input id="email-register-driver" class="input" placeholder="Enter your email*" type="email" name="email"
+               required="">
+        <p id="email-exist-driver" class="form-error-message">This email address is already registered.</p>
+        <input id="password-register-driver" class="input" placeholder="Enter password*" type="password" name="password"
+               required="">
+        <p id="error-register-driver" class="form-error-message">We can't sign you in right now. Please try again later.</p>
+        <p id="success-register-driver" class="success-register">You have successfully registered, now you need to login.</p>
+        <input class="btn btn-modal" type="submit" value="Submit">
+    </form>
+</dialog>
+
+<!--Register shipper-->
+<dialog id="modal-register-shipper" class="modal">
+    <div>
+        <h2 class="modal-title">Register</h2>
+        <span class="close-btn" id="close-register-shipper">✖</span>
+    </div>
+    <form id="register-form-shipper">
+        <p id="error-register-shipper-validation" class="form-error-message" >Please enter correct data that meets the following rules: at least 3 characters name, at least 6 characters password and real mail address.</p>
+
+        <input id="name-register-shipper" class="input" placeholder="Enter your name*" type="text" name="userName" required="">
+        <input id="email-register-shipper" class="input" placeholder="Enter your email*" type="email" name="email"
+               required="">
+        <p id="email-exist-shipper" class="form-error-message">This email address is already registered.</p>
+        <input id="password-register-shipper" class="input" placeholder="Enter password*" type="password" name="password"
+               required="">
+        <p id="error-register-shipper" class="form-error-message" >We can't sign you in right now. Please try again later.</p>
+        <p id="success-register-shipper" class="success-register">You have successfully registered, now you need to <span class="login-link">login</span></p>
+        <input class="btn btn-modal" type="submit" value="Submit">
+    </form>
+</dialog>
+
+<!--   Login   -->
+<dialog id="modal-login" class="modal">
+    <div>
+        <h2 class="modal-title">Login</h2>
+        <span class="close-btn" id="close-login">✖</span>
+    </div>
+    <form id="login-form">
+        <p id="error-login" class="form-error-message">Sorry, we can't log you in. Please try again later.</p>
+        <input id="email-login" class="input" placeholder="Enter your email*" type="email" name="email"
+               required="">
+        <p id="error-login-data" class="form-error-message">Incorrect email or password</p>
+        <input id="password-login" class="input" placeholder="Enter password*" type="password" name="password"
+               required="">
+        <input class="btn btn-modal" type="submit" value="Submit">
+    </form>
+</dialog>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="home.js"></script>
+
+</body>
+</html>

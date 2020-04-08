@@ -1,0 +1,121 @@
+.block__wrapper {
+    max-width: 1200px;
+    padding: 60px 30px 0 30px;
+    margin: 0 auto;
+}
+
+.intro {
+    height: 720px;
+    background: url("../img/header-bg.jpg"), rgba(0, 0, 0, 0.5) center center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.intro__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-block {
+    width: 21%;
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.company-name__intro {
+    width: 40%;
+    text-align: center;
+    color: #FF8D40;
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.register-title {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.btn.btn__login {
+    margin-bottom: 0;
+    display: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+.header-img {
+    position: absolute;
+    bottom: -190px;
+    left: calc(50% - 200px);
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    background: url("../img/truck.jpg"), rgba(0, 0, 0, 0.5) center center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border: 3px solid white;
+}
+
+.services {
+    background-color: #34D0B6;
+}
+
+.services__wrapper {
+    display: flex;
+}
+
+.service-item {
+    width: 50%;
+    min-height: 300px;
+    text-align: center;
+    padding: 0 20px 0 210px;
+}
+
+.service-item:first-of-type {
+    border-right: 3px solid white;
+    padding: 0 210px 0 20px;
+}
+
+.services-item__title {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.services-item__description {
+    color: #161619;
+    font-size: 22px;
+}
+
+.success-register {
+    visibility: hidden;
+    text-align: left;
+    color: #5FD2B5;
+}
+
+#name-register-driver, #name-register-shipper {
+    margin-bottom: 28px;
+}
+
+#error-register-shipper-validation, #error-register-driver-validation {
+    width: 360px;
+    text-align: center;
+}
+
+.modal-title {
+    margin-bottom: 0;
+}
+
+#error-login {
+    margin: 8px;
+}

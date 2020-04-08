@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="block__wrapper header__wrapper">
+        <h1 class="company-name">easy shipping</h1>
+        <a href="../home/home.html" class="header-link">Home</a>
+    </div>
+</header>
+
+
+<div class="user">
+    <div class="block__wrapper">
+
+        <div class="user__greeting-wrapper">
+            <h3 class="user__greeting">Hello, <span class="user__greeting--name"></span></h3>
+            <button class="btn btn-sign-out">Sign out</button>
+        </div>
+
+        <p class="error-message">Sorry, something went wrong and we can't upload your information now. Please try again
+            later.</p>
+
+        <div class="user-page">
+            <div class="user-order-panel">
+                <p class="error-message error-message__user-page">Sorry, something went wrong and we can't process your
+                    request. Please try again later.</p>
+
+                <!--                For driver-->
+                <p class="truck__title">Choose your truck(s):</p>
+                <div class="trucks"></div>
+
+                <!--                For shipper-->
+                <div class="order"> </div>
+
+            </div>
+
+            <div class="user-profile">
+                <div class="user__photo"></div>
+
+                <form name="avatar" id="form-upload-photo">
+                    <input type="file" name="avatar" value="" accept=".jpg, .jpeg, .png" class="upload-photo">
+                    <input type="submit" name="" value="Change" class="btn btn-upload-photo">
+                </form>
+                <p class="error-message error-message-avatar">File size must not exceed 1 megabyte</p>
+
+                <p class="user__information">Status: <span class="user-status"></span></p>
+                <p class="user__information">Name: <span class="user-name"></span></p>
+                <p class="user__information">Email: <span class="user-email"></span></p>
+                <p class="change-password">Change password</p>
+                <button class="btn delete-account">Delete account</button>
+                <p class="error-message error-message-delete">Sorry, something went wrong and we can't delete your
+                    account now. Please try again later.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="block__wrapper footer__wrapper">
+        &copy;2020 Easy Shipping, Inc. All Rights Reserved.
+    </p>
+</footer>
+
+
+<!--   Modal to change password   -->
+<dialog id="modal-password" class="modal">
+    <div>
+        <h2 class="modal-title">Change password</h2>
+        <span class="close-btn" id="close-password">✖</span>
+    </div>
+    <form id="password-form">
+        <p id="error-message-password" class="form-error-message">Sorry, we can't change your password now. Try
+            again.</p>
+        <input id="password-old" class="input" placeholder="Enter old password*" type="password" name="password"
+               required="">
+        <p id="error-password" class="form-error-message">Old password is incorrect. Try again.</p>
+        <input id="password-new" class="input" placeholder="Enter new password*" type="password" name="password"
+               required="">
+        <p id="error-password-validation" class="form-error-message">Password must be at least 6 characters.</p>
+        <p class="success-password">Password has has been successfully updated.</p>
+        <input class="btn btn-modal" type="submit" value="Submit">
+    </form>
+</dialog>
+
+
+<!--   Modal to update a load   -->
+<dialog id="modal-update-load" class="modal">
+    <div>
+        <h2 class="modal-title">Update a load</h2>
+        <span class="close-btn" id="close-update-load">✖</span>
+    </div>
+    <form id="update-load-form">
+        <input id="update-width" class="input" placeholder="Enter width, cm*" type="number" required="">
+        <input id="update-height" class="input" placeholder="Enter height, cm*" type="number" required="">
+        <input id="update-length" class="input" placeholder="Enter length, cm*" type="number" required="">
+        <input id="update-weight" class="input" placeholder="Enter weight, cm*" type="number" required="">
+
+        <p id="error-update-load" class="form-error-message">Sorry, we can't update load now. Please try again later</p>
+        <input class="btn btn-modal" type="submit" value="Submit">
+    </form>
+</dialog>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://github.com/devongovett/pdfkit/releases/download/v0.10.0/pdfkit.standalone.js"></script>
+<script src="https://github.com/devongovett/blob-stream/releases/download/v0.1.3/blob-stream.js"></script>
+<script src="profile.js"></script>
+
+</body>
+</html>

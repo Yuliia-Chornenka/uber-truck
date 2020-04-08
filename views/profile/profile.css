@@ -1,0 +1,324 @@
+.block__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user__greeting-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.user__greeting {
+    font-size: 40px;
+    color: #171616;
+    text-align: center;
+    width: 90%;
+}
+
+.error-message {
+    visibility: hidden;
+    font-size: 21px;
+    color: red;
+    text-align: center;
+}
+
+.btn.delete-account {
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+}
+
+.upload-photo {
+    display: block;
+    margin: auto;
+}
+
+.btn.btn-upload-photo {
+    display: block;
+    margin: 5px auto;
+    height: 40px;
+    width: 130px;
+}
+
+.btn.btn-sign-out {
+    margin: 0;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #00A287;
+    transition: all ease 0.3s;
+}
+
+.user-page {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message.error-message-avatar {
+    font-size: 16px;
+}
+
+.user-order-panel {
+    width: 62%;
+    padding: 10px 20px 100px 20px;
+    box-shadow: 0 3px 6px 3px #dcdcdc;
+    position: relative;
+    text-align: center;
+}
+
+.user-profile {
+    box-shadow: 0 3px 6px 3px #dcdcdc;
+    width: 25%;
+    padding: 30px;
+    height: 610px;
+}
+
+
+.user__photo {
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/default-user-image.png");
+    background-size: cover;
+}
+
+.user__information {
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.user-status, .user-name, .user-email {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.change-password {
+    text-align: center;
+    font-size: 18px;
+    margin: 25px 0;
+    color: #00A287;
+    cursor: pointer;
+}
+
+.change-password:hover {
+    text-decoration: underline;
+}
+
+.success-password {
+    visibility: hidden;
+    text-align: left;
+    color: #5FD2B5;
+}
+
+.error-message-delete {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/*  Pagination  */
+input[type="radio"].pagination-radio {
+    display: none;
+}
+
+.pagination-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    right: 5%;
+}
+
+.pagination-radio-label {
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 5px 11px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pagination-radio-label:hover {
+    background-color: #FFAD73;
+}
+
+input[type="radio"].pagination-radio:checked + .pagination-radio-label {
+    background-color: #FFAD73;
+}
+
+
+/*   For a driver   */
+.trucks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.truck-container {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.truck__title {
+    display: none;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.checkbox-truck {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.truck__img {
+    width: 90%;
+}
+
+.truck__name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0 8px 0;
+}
+
+input[type="checkbox"].radio-assign-btn {
+    display: none;
+}
+
+.btn.assign-btn {
+    display: none;
+    position: absolute;
+    bottom: -80px;
+    left: calc(50% - 75px);
+    border: 3px solid black;
+    background-color: black;
+    font-size: 22px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.btn.assign-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.order-container {
+    min-height: 400px;
+}
+
+.driver-order-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #FF6A00;
+    padding: 5px;
+    margin: 100px 0 50px 0;
+}
+
+.select-state {
+    padding: 3px;
+    background-color: #FFAD73;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.option-state {
+    background-color: white;
+}
+
+
+/*   For shipper   */
+.order {
+    text-align: center;
+}
+
+.order-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input.input-order {
+    width: 19%;
+}
+
+.btn.btn-create-order {
+    width: 19%;
+}
+
+.btn.btn-post-load, .btn.btn-update-load, .btn.btn-delete-load {
+    margin: 20px 20px 0 20px;
+}
+
+.select-status {
+    padding: 3px 10px;
+    background-color: #FFAD73;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.select-status-label {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.option-status {
+    background-color: white;
+}
+
+.created-load {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 3px 6px 3px #dcdcdc;
+    margin-top: 50px;
+    padding: 5px 10px 25px 10px;
+}
+
+.error-message__no-truck {
+    margin-bottom: 5px;
+}
+
+.created-load__dimensions {
+    width: 100%;
+    display: flex;
+}
+
+.created-load__item.created-load__dimensions-item {
+    width: 25%;
+}
+
+.created-load__item {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 5px;
+    width: 50%;
+    border: 2px solid #00A287;
+    box-sizing: border-box;
+}
+
+.created-load-status, .created-load-state {
+    background-color: #FFAD73;
+    font-weight: 700;
+}
+
+.error-order-validation {
+    text-align: center;
+}
+
